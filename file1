@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int binary_search(int a[],int n,int key){
+}
+int main(){
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt","r",stdin);
+    freopen("output.txt","w",stdout);
+    #endif
+    int n=5;
+    int b[n]={2,4,6,8,8,10};
+    int key;
+    bool state=binary_search(b,b+n,key);
+    cout<<state;
+}
