@@ -1,0 +1,16 @@
+from csv import *
+import os
+if os.path.exists("data.csv"):
+    with open("data.csv")as f1:
+        data=list(reader(f1))
+        college={}
+        for d in data[1:]:
+            c=d[-4].upper()
+            if c not in college:
+                college[c]=1
+            else:
+                college[c]+=1
+    for k,v in college.items():
+        print(k,v)
+else:
+    print("File not found")
